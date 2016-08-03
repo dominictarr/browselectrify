@@ -15,6 +15,7 @@
     "stream-to-pull-stream": "^1.7.0"
   },
   "devDependencies": {},
+  "bin": "bin.js",
   "scripts": {
     "build": "browserify index.js  --exclude electron> _bundle.js && cat _bundle.js suffix.js > bundle.js"
   },
