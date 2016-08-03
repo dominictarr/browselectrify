@@ -7,6 +7,10 @@ if(!(function () { try { return !!require('electron') } catch(_) {}})())  {
   node_modules.path = require('path')
   node_modules.querystring = require('querystring')
   node_modules.punycode = require('punycode')
+  node_modules.assert = require('assert')
+  node_modules.events = require('events')
+  node_modules.util = require('util')
+  node_modules.os = require('os')
 }
 
 if(typeof window !== 'undefined') {
