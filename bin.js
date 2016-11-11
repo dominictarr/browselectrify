@@ -10,7 +10,7 @@ var Cat = require('pull-cat')
 
 var bfy = cp.spawn(
         require.resolve('browserify/bin/cmd.js'),
-        [process.argv[2], '--no-builtins', '--igv', ',']
+        [process.argv[2], '--no-builtins', '--igv', ',', '--exclude', 'electron']
     )
 
 pull(
